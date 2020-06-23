@@ -192,7 +192,7 @@ namespace N_m3u8DL_CLI
                     if (sd.SegDur < 0) sd.SegDur = 0; //防止负数
                     sd.FileUrl = firstSeg["segUri"].Value<string>();
                     //VTT字幕
-                    if (isVTT == false && sd.FileUrl.Trim('\"').EndsWith(".vtt"))
+                    if (isVTT == false && sd.FileUrl.Trim('\"').EndsWith(".vtt",".webvtt"))
                         isVTT = true;
                     sd.Method = firstSeg["method"].Value<string>();
                     if (sd.Method != "NONE")
@@ -282,7 +282,7 @@ namespace N_m3u8DL_CLI
                             if (sd.SegDur < 0) sd.SegDur = 0; //防止负数
                                 sd.FileUrl = info["segUri"].Value<string>();
                                 //VTT字幕
-                                if (isVTT == false && sd.FileUrl.Trim('\"').EndsWith(".vtt"))
+                                if (isVTT == false && sd.FileUrl.Trim('\"').EndsWith(".vtt",".webvtt"))
                                 isVTT = true;
                             sd.Method = info["method"].Value<string>();
                             if (sd.Method != "NONE")
