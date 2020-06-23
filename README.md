@@ -78,6 +78,3 @@ N_m3u8DL-CLI.exe <URL|JSON|FILE> [OPTIONS]
 
 # 用户文档
 https://nilaoda.github.io/N_m3u8DL-CLI/
-
-# 赞赏
-https://nilaoda.github.io/N_m3u8DL-CLI/source/images/alipay.png
